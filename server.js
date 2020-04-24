@@ -20,6 +20,4 @@ app.use(shopRoutes);
 
 app.use(get404);
 
-
-
 app.listen(4000);
