@@ -2,6 +2,8 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 
+const {get404} = require('./controllers/error');
+
 const app = express();
 
 app.set('view engine','pug');
@@ -16,9 +18,7 @@ const shopRoutes = require('./routes/shop');
 app.use('/admin', adminRoutes);
 app.use(shopRoutes);
 
-app.use((req, res) => {
-    res.status(404).render('404', {pageTitle: 'Page not found'});
-});
+app.use(get404);
 
 
 
