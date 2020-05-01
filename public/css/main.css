@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -7,7 +6,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 
 main {
@@ -34,10 +33,11 @@ form {
 .main-header {
   width: 100%;
   height: 3.5rem;
-  background-color: #00695c;
+  background-color: #ffd900;
   padding: 0 1.5rem;
   display: flex;
   align-items: center;
+  font-size: 15px;
 }
 
 .main-header__nav {
@@ -60,13 +60,14 @@ form {
 
 .main-header__item a {
   text-decoration: none;
-  color: white;
+  color: #00695c;
 }
 
 .main-header__item a:hover,
 .main-header__item a:active,
 .main-header__item a.active {
-  color: #ffeb3b;
+  color: #fefefe;
+  font-weight: bold;
 }
 
 .mobile-nav {
@@ -116,12 +117,12 @@ form {
 }
 
 #side-menu-toggle {
-  border: 1px solid white;
+  border: 2px solid #00695c;
   font: inherit;
   padding: 0.5rem;
   display: block;
   background: transparent;
-  color: white;
+  color: #00695c;
   cursor: pointer;
 }
 
@@ -131,8 +132,8 @@ form {
 
 #side-menu-toggle:active,
 #side-menu-toggle:hover {
-  color: #ffeb3b;
-  border-color: #ffeb3b;
+  color: white;
+  border-color: white;
 }
 
 .backdrop {
@@ -216,11 +217,10 @@ form {
   color: white;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .main-header__nav {
     display: flex;
   }
-
   #side-menu-toggle {
     display: none;
   }
